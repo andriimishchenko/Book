@@ -51,6 +51,10 @@ public class ListOfThemes extends AppCompatActivity {
                             Intent intent3 = new Intent(getBaseContext(), Page003.class);
                             startActivity(intent3);
                             break;
+                        case 3:
+                            Intent intent4 = new Intent(getBaseContext(), Page004.class);
+                            startActivity(intent4);
+                            break;
                     }
                 }
                 else if  (groupPosition==1){
