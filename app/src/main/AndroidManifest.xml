@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.booksapp.book">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Page101" />
+        <activity android:name=".Page001" />
+        <activity android:name=".Page002" />
+        <activity android:name=".Page103" />
+        <activity android:name=".Page102" />
+        <activity android:name=".Page003" />
+        <activity android:name=".Page104" />
+        <activity android:name=".Page105" />
+        <activity android:name=".Page106" />
+        <activity android:name=".Page107" />
+        <activity android:name=".Page108" />
+        <activity android:name=".Page109" />
+        <activity android:name=".Page110" />
+        <activity android:name=".Page111" />
+        <activity android:name=".Page201" />
+        <activity android:name=".Page202" />
+        <activity android:name=".Page203" />
+        <activity android:name=".Page204" />
+        <activity android:name=".Page205" />
+        <activity android:name=".Page206" />
+        <activity android:name=".Page207" />
+        <activity android:name=".Page208" />
+        <activity android:name=".Page209" />
+        <activity android:name=".Page210" />
+        <activity android:name=".Page211" />
+        <activity android:name=".Page212" />
+        <activity android:name=".Page213" />
+        <activity android:name=".Page301" />
+        <activity android:name=".TestFinalActivity" />
+        <activity android:name=".PageWebView" />
+        <activity android:name=".ListOfThemes" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
