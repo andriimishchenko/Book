@@ -38,7 +38,15 @@
         <activity android:name=".Page212" />
         <activity android:name=".Page213" />
         <activity android:name=".Page301" />
-        <activity android:name=".TestFinalActivity" />
+        <activity android:name=".Page302" />
+        <activity android:name=".Page303" />
+        <activity android:name=".Page304" />
+        <activity android:name=".Page305" />
+        <activity android:name=".Page306" />
+        <activity android:name=".Page307" />
+        <activity android:name=".Page308" />
+        <activity android:name=".Page309" />
+        <activity android:name=".Page310" />
         <activity android:name=".PageWebView" />
         <activity android:name=".ListOfThemes" />
         <activity android:name=".MainActivity">
