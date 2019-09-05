@@ -512,87 +512,103 @@ public class ListOfThemes extends AppCompatActivity {
                                 else if  (groupPosition==10){
                     switch (childPosition){
                         case 0:
-                            Intent intent_100 = new Intent(getBaseContext(), Page101.class);
+                            Intent intent_100 = new Intent(getBaseContext(), Page1001.class);
                             startActivity(intent_100);
                             break;
                         case 1:
-                            Intent intent_101 = new Intent(getBaseContext(), Page502.class);
+                            Intent intent_101 = new Intent(getBaseContext(), Page1002.class);
                             startActivity(intent_101);
                             break;
                         case 2:
-                            Intent intent_102 = new Intent(getBaseContext(), Page503.class);
+                            Intent intent_102 = new Intent(getBaseContext(), Page1003.class);
                             startActivity(intent_102);
                             break;
                         case 3:
-                            Intent intent_103 = new Intent(getBaseContext(), Page504.class);
+                            Intent intent_103 = new Intent(getBaseContext(), Page1004.class);
                             startActivity(intent_103);
-                            break;
-                        case 4:
-                            Intent intent_104 = new Intent(getBaseContext(), Page505.class);
-                            startActivity(intent_104);
                             break;
                     }
                 }
-                //                else if  (groupPosition==5){
-//                    switch (childPosition){
-//                        case 0:
-//                            Intent intent_100 = new Intent(getBaseContext(), Page501.class);
-//                            startActivity(intent_100);
-//                            break;
-//                        case 1:
-//                            Intent intent_101 = new Intent(getBaseContext(), Page502.class);
-//                            startActivity(intent_101);
-//                            break;
-//                        case 2:
-//                            Intent intent_102 = new Intent(getBaseContext(), Page503.class);
-//                            startActivity(intent_102);
-//                            break;
-//                        case 3:
-//                            Intent intent_103 = new Intent(getBaseContext(), Page504.class);
-//                            startActivity(intent_103);
-//                            break;
-//                        case 4:
-//                            Intent intent_104 = new Intent(getBaseContext(), Page505.class);
-//                            startActivity(intent_104);
-//                            break;
-//                        case 5:
-//                            Intent intent_105 = new Intent(getBaseContext(), Page506.class);
-//                            startActivity(intent_105);
-//                            break;
-//                        case 6:
-//                            Intent intent_106 = new Intent(getBaseContext(), Page507.class);
-//                            startActivity(intent_106);
-//                            break;
-//                        case 7:
-//                            Intent intent_107 = new Intent(getBaseContext(), Page508.class);
-//                            startActivity(intent_107);
-//                            break;
-//                        case 8:
-//                            Intent intent_108 = new Intent(getBaseContext(), Page509.class);
-//                            startActivity(intent_108);
-//                            break;
-//                        case 9:
-//                            Intent intent_109 = new Intent(getBaseContext(), Page510.class);
-//                            startActivity(intent_109);
-//                            break;
-//                        case 10:
-//                            Intent intent_110 = new Intent(getBaseContext(), Page511.class);
-//                            startActivity(intent_110);
-//                            break;
-//                        case 11:
-//                            Intent intent_111 = new Intent(getBaseContext(), Page512.class);
-//                            startActivity(intent_111);
-//                            break;
-//                        case 12:
-//                            Intent intent_112 = new Intent(getBaseContext(), Page513.class);
-//                            startActivity(intent_112);
-//                            break;
-//                        case 13:
-//                            Intent intent_113 = new Intent(getBaseContext(), Page514.class);
-//                            startActivity(intent_113);
-//                            break;
-//                    }
-//                }
+                else if  (groupPosition==11){
+                    switch (childPosition){
+                        case 0:
+                            Intent intent_100 = new Intent(getBaseContext(), Page1101.class);
+                            startActivity(intent_100);
+                            break;
+                        case 1:
+                            Intent intent_101 = new Intent(getBaseContext(), Page1102.class);
+                            startActivity(intent_101);
+                            break;
+                        case 2:
+                            Intent intent_102 = new Intent(getBaseContext(), Page1103.class);
+                            startActivity(intent_102);
+                            break;
+                        case 3:
+                            Intent intent_103 = new Intent(getBaseContext(), Page1104.class);
+                            startActivity(intent_103);
+                            break;
+                        case 4:
+                            Intent intent_104 = new Intent(getBaseContext(), Page1105.class);
+                            startActivity(intent_104);
+                            break;
+                        case 5:
+                            Intent intent_105 = new Intent(getBaseContext(), Page1106.class);
+                            startActivity(intent_105);
+                            break;
+                        case 6:
+                            Intent intent_106 = new Intent(getBaseContext(), Page1107.class);
+                            startActivity(intent_106);
+                            break;
+                        case 7:
+                            Intent intent_107 = new Intent(getBaseContext(), Page1108.class);
+                            startActivity(intent_107);
+                            break;
+                        case 8:
+                            Intent intent_108 = new Intent(getBaseContext(), Page1109.class);
+                            startActivity(intent_108);
+                            break;
+                        case 9:
+                            Intent intent_109 = new Intent(getBaseContext(), Page1110.class);
+                            startActivity(intent_109);
+                            break;
+                        case 10:
+                            Intent intent_110 = new Intent(getBaseContext(), Page1111.class);
+                            startActivity(intent_110);
+                            break;
+                        case 11:
+                            Intent intent_111 = new Intent(getBaseContext(), Page1112.class);
+                            startActivity(intent_111);
+                            break;
+                        case 12:
+                            Intent intent_112 = new Intent(getBaseContext(), Page1113.class);
+                            startActivity(intent_112);
+                            break;
+                        case 13:
+                            Intent intent_113 = new Intent(getBaseContext(), Page1114.class);
+                            startActivity(intent_113);
+                            break;
+                        case 14:
+                            Intent intent_114 = new Intent(getBaseContext(), Page1115.class);
+                            startActivity(intent_114);
+                            break;
+                        case 15:
+                            Intent intent_115 = new Intent(getBaseContext(), Page1116.class);
+                            startActivity(intent_115);
+                            break;
+                        case 16:
+                            Intent intent_116 = new Intent(getBaseContext(), Page1117.class);
+                            startActivity(intent_116);
+                            break;
+                        case 17:
+                            Intent intent_117 = new Intent(getBaseContext(), Page1118.class);
+                            startActivity(intent_117);
+                            break;
+                        case 18:
+                            Intent intent_118 = new Intent(getBaseContext(), Page1119.class);
+                            startActivity(intent_118);
+                            break;
+                    }
+                }
                 //                else if  (groupPosition==5){
 //                    switch (childPosition){
 //                        case 0:
