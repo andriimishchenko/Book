@@ -2,10 +2,7 @@ package com.booksapp.book;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.MenuItem;
 
 public class Page004 extends AppCompatActivity {

@@ -2,14 +2,13 @@ package com.booksapp.book;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.ExpandableListView.OnChildClickListener;
 import android.widget.RelativeLayout;
 import android.widget.SimpleExpandableListAdapter;
-import androidx.appcompat.app.AppCompatActivity;
+
 
 public class ListOfThemes extends AppCompatActivity {
 
