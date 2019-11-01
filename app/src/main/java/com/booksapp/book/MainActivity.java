@@ -1,12 +1,9 @@
 package com.booksapp.book;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Handler;
 import android.widget.FrameLayout;
 import android.widget.ImageView;

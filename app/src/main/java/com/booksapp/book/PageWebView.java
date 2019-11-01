@@ -58,24 +58,8 @@ public class PageWebView extends WebView
                 "\n" +
                 ".image {text-align: center;}\n" +
                 "\n" +
-                ".container\n" +
-                "{\n" +
-                "\t/* border: 1px solid black; */\n" +
-                "\twidth:100%;\n" +
-                "}\n" +
-                ".left-block_center{width:45%; float:left;padding-right:2%;margin-left:2%;}\n" +
-                ".right-block_center{width:45%;float:left;padding-left:2%;margin-right:2%;}\n" +
                 ".text{float: none; text-align:  justify;}\n" +
                 "\n" +
-                ".elipse\n" +
-                "{\n" +
-                "\ttext-align: center; \n" +
-                "\tborder: 1px solid black; \n" +
-                "\twidth:45px; \n" +
-                "\tborder-radius: 5px;\n" +
-                "\tdisplay: inline-block; \n" +
-                "\tpadding: 1px;\n" +
-                "\tline-height: 13px; \n" +
                 "}");
         sb.append("\n</style>");
         sb.append("\n</head>");

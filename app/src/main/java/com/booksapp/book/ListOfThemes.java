@@ -22,9 +22,6 @@ public class ListOfThemes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setTitle("Думай и богатей");
- ActionBar actionBar = getSupportActionBar();
-actionBar.setHomeButtonEnabled(true);
-actionBar.setDisplayHomeAsUpEnabled(true);
 
         RelativeLayout relLayout=new RelativeLayout(this);
         RelativeLayout.LayoutParams relLayoutParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);

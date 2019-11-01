@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import android.content.Context;
-import android.widget.ExpandableListView;
 import android.widget.SimpleExpandableListAdapter;
 
 public class AdapterHelper {
