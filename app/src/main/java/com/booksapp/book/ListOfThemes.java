@@ -771,6 +771,14 @@ public class ListOfThemes extends AppCompatActivity {
                             Intent intent_121 = new Intent(getBaseContext(), Page1522.class);
                             startActivity(intent_121);
                             break;
+                        case 22:
+                            Intent intent_122 = new Intent(getBaseContext(), Page1523.class);
+                            startActivity(intent_122);
+                            break;
+                        case 23:
+                            Intent intent_123 = new Intent(getBaseContext(), Page1524.class);
+                            startActivity(intent_123);
+                            break;
                     }
                 }
                 return false;}
