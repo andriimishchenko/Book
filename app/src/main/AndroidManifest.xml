@@ -139,6 +139,10 @@
         <activity android:name=".Page1116" />
         <activity android:name=".Page1117" />
         <activity android:name=".Page1118" />
+        <activity android:name=".Page1201" />
+        <activity android:name=".Page1202" />
+        <activity android:name=".Page1203" />
+        <activity android:name=".Page1204" />
         <activity android:name=".PageWebView" />
         <activity android:name=".ListOfThemes" />
         <activity android:name=".MainActivity">

@@ -103,7 +103,7 @@ public class ListOfThemes extends AppCompatActivity {
                             Intent intent_110 = new Intent(getBaseContext(), Page111.class);
                             startActivity(intent_110);
                             break;
-                    }
+                        }
                     }
                 else if  (groupPosition==2){
                     switch (childPosition){
@@ -329,7 +329,7 @@ public class ListOfThemes extends AppCompatActivity {
                             break;
                     }
                 }
-                                else if  (groupPosition==7){
+                else if  (groupPosition==7){
                     switch (childPosition){
                         case 0:
                             Intent intent_100 = new Intent(getBaseContext(), Page701.class);
@@ -417,7 +417,7 @@ public class ListOfThemes extends AppCompatActivity {
                             break;
                     }
                 }
-                                else if  (groupPosition==8){
+                else if  (groupPosition==8){
                     switch (childPosition){
                         case 0:
                             Intent intent_100 = new Intent(getBaseContext(), Page801.class);
@@ -453,7 +453,7 @@ public class ListOfThemes extends AppCompatActivity {
                             break;
                     }
                 }
-                                else if  (groupPosition==9){
+                else if  (groupPosition==9){
                     switch (childPosition){
                         case 0:
                             Intent intent_100 = new Intent(getBaseContext(), Page901.class);
@@ -509,7 +509,7 @@ public class ListOfThemes extends AppCompatActivity {
                             break;
                     }
                 }
-                                else if  (groupPosition==10){
+                else if  (groupPosition==10){
                     switch (childPosition){
                         case 0:
                             Intent intent_100 = new Intent(getBaseContext(), Page1001.class);
@@ -602,10 +602,6 @@ public class ListOfThemes extends AppCompatActivity {
                         case 17:
                             Intent intent_117 = new Intent(getBaseContext(), Page1118.class);
                             startActivity(intent_117);
-                            break;
-                        case 18:
-                            Intent intent_118 = new Intent(getBaseContext(), Page1119.class);
-                            startActivity(intent_118);
                             break;
                     }
                 }
