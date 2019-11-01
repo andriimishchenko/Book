@@ -3,14 +3,19 @@ package com.booksapp.book;
 import android.app.Activity;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 
-public class Page1519 extends Activity {
+
+public class Page1519 extends AppCompatActivity {
     private PageWebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTitle("Думай и богатей");
+ ActionBar actionBar = getSupportActionBar();
+actionBar.setHomeButtonEnabled(true);
+actionBar.setDisplayHomeAsUpEnabled(true);
         webView = new PageWebView(this);
         setContentView(webView);
         webView.showPage(PAGE_HTML);

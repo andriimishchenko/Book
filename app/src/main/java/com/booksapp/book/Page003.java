@@ -2,6 +2,8 @@ package com.booksapp.book;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import androidx.appcompat.app.ActionBar;
@@ -9,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 public class Page003 extends AppCompatActivity {
-    private PageWebView webView1;
+    private PageWebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,9 +20,9 @@ public class Page003 extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setHomeButtonEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
-        webView1 = new PageWebView(this);
-        setContentView(webView1);
-        webView1.showPage(PAGE_HTML1);
+        webView = new PageWebView(this);
+        setContentView(webView);
+        webView.showPage(PAGE_HTML1);
     }
 
     @Override
