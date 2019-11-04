@@ -2,6 +2,7 @@ package com.booksapp.book;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBar;
@@ -22,7 +23,16 @@ actionBar.setDisplayHomeAsUpEnabled(true);
         webView.showPage(PAGE_HTML);
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     private String PAGE_HTML = "<h4>И он сжег корабли</h4>\n" +
             "<div class=\"text\">\n" +
             "<p>Много лет назад один великий полководец оказался перед выбором: он должен был принять решение, определившее впоследствии его победу. А противостоял полководцу враг, армия которого намного превосходила его собственную. И он погрузил своих солдат на корабли и отправил их во вражескую землю. По прибытии же приказал корабли сжечь. Перед битвой полководец обратился к армии: «Видите ли Вы дым от наших кораблей? Это значит, что если мы не победим, то не сможем живыми покинуть эти берега. Один у нас выбор: победить или погибнуть».\n" +

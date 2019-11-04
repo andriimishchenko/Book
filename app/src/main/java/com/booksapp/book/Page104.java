@@ -2,6 +2,7 @@ package com.booksapp.book;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBar;
@@ -22,7 +23,16 @@ actionBar.setDisplayHomeAsUpEnabled(true);
         webView.showPage(PAGE_HTML);
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     private String PAGE_HTML = "<h4>Успех за шаг до поражения</h4>\n" +
             "<div class=\"text\">\n" +
             "<p>Желание можно превратить в золото. С тех пор как мистер Дерби сделал это открытие, он многократно возместил свои потери.\n" +

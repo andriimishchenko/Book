@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Page004"></activity>
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@menu/main" />
+
+        <activity android:name=".Page004" />
         <activity android:name=".Page101" />
         <activity android:name=".Page001" />
         <activity android:name=".Page002" />

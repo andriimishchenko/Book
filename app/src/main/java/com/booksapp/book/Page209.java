@@ -2,6 +2,7 @@ package com.booksapp.book;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBar;
@@ -22,7 +23,16 @@ actionBar.setDisplayHomeAsUpEnabled(true);
         webView.showPage(PAGE_HTML);
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     private String PAGE_HTML = "<h4>Что остановит бурю</h4>\n" +
             "<div class=\"text\">\n" +
             "<p>Сейчас, ретроспективно анализируя события, Я могу сказать, что потрясающие результаты, достигнутые сыном, напрямую связаны с его верой в меня. Он не оспаривал ничего из того, что Я ему говорил. Я внушал ему идею, что он имеет очевидное преимущество перед старшим братом, которое будет проявляться множеством способов. Например, учителя в школе, заметив, что у него нет ушей, будут уделять ему особое внимание и обращаться к нему особенно ласково. И он видел, что так и есть. Или же, говорил Я ему, когда он подрастет и начнет продавать газеты (а его старший брат уже это делал), у него будет огромное преимущество перед братом, потому что люди станут давать ему больше чаевых, видя, какой он жизнерадостный, деловитый мальчик, несмотря на свой недостаток.\n" +

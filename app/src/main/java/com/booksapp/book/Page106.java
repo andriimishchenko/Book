@@ -1,6 +1,7 @@
 package com.booksapp.book;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,7 +25,16 @@ actionBar.setDisplayHomeAsUpEnabled(true);
         webView.showPage(PAGE_HTML);
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     private String PAGE_HTML = "<h4>«Да», спрятанное за «нет»</h4>\n" +
             "<div class=\"text\">\n" +
             "<p>Так вот, мы стояли на старой затхлой мельнице, и мистер Дерби, повторяЯ мне сюжет о необычном «завоевании», спросил: «Какой Вы можете сделать отсюда вывод? Какой силой обладало дитя, так безоговорочно покорившее дядюшку?»\n" +

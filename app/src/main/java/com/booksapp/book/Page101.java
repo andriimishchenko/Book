@@ -1,6 +1,8 @@
 package com.booksapp.book;
 
 import android.os.Bundle;
+import android.view.MenuItem;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBar;
 
@@ -21,7 +23,16 @@ public class Page101 extends AppCompatActivity {
         setContentView(webView);
         webView.showPage(PAGE_HTML1);
     }
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
     private String PAGE_HTML1 = "<h3>1. МЫСЛЬ – ЭТО ВЕЩЬ!</h3>\n" +
             "<div class=\"text\">\n" +

@@ -2,6 +2,7 @@ package com.booksapp.book;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBar;
@@ -22,7 +23,16 @@ actionBar.setDisplayHomeAsUpEnabled(true);
         webView.showPage(PAGE_HTML);
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     private String PAGE_HTML = "<h4>Принципы ценою в сто миллионов</h4>\n" +
             "<div class=\"text\">\n" +
             "<p>Тем, кто не привык к тренировке ума, эти советы могут показаться бессмысленными. Может быть, таким людям будет интересно узнать, что в них сформулирована информация, полученная автором от Эндрю Карнеги. От Карнеги, начинавшего рабочим на металлургическом заводе и сумевшего, несмотря на очень плохой старт, выжать из этих принципов богатство, оцениваемое примерно в сто миллионов долларов.\n" +

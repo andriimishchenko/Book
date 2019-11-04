@@ -4,6 +4,8 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBar;
+
+import android.view.Menu;
 import android.view.MenuItem;
 
 
@@ -21,6 +23,11 @@ public class Page001 extends AppCompatActivity {
         webView = new PageWebView(this);
         setContentView(webView);
         webView.showPage(PAGE_HTML1);
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

@@ -2,6 +2,7 @@ package com.booksapp.book;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBar;
@@ -22,7 +23,16 @@ actionBar.setDisplayHomeAsUpEnabled(true);
         webView.showPage(PAGE_HTML);
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     private String PAGE_HTML = "<h4>«Мысль без веры мертва есть»</h4>\n"+
             "<div class=\"text\">"+
             "<p>На протяжении веков жрецы от религии увещевали человечество верить в тот или иной догмат, но не могли сказать людям, как приобрести эту веру. Однако никто никогда не формулировал мысли таким образом: «Вера – это такое состояние сознания, которое может быть вызвано самовнушением».\n" +

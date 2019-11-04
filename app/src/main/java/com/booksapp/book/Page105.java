@@ -2,6 +2,7 @@ package com.booksapp.book;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBar;
@@ -22,7 +23,16 @@ actionBar.setDisplayHomeAsUpEnabled(true);
         webView.showPage(PAGE_HTML);
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     private String PAGE_HTML = "<h4>Дитя, повелевающее мужем</h4>\n" +
             "<div class=\"text\">\n" +
             "<p>Вскоре после того, как мистер Дерби получил «ученую степень» в «колледже больших подлянок» и решил сделать выводы из своей «дипломной работы» по золотым шахтам, судьба подарила ему возможность убедиться, что «нет» не всегда означает нет.\n" +

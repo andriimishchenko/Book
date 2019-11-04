@@ -2,6 +2,7 @@ package com.booksapp.book;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBar;
@@ -25,7 +26,16 @@ actionBar.setDisplayHomeAsUpEnabled(true);
         webView.showPage(PAGE_HTML);
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     private String PAGE_HTML = "<h4>Хочу – значит, будет!</h4>\n" +
             "<div class=\"text\">\n" +
             "<p>Когда Генри Форд решил выпускать автомобиль знаменитой марки «V 8», он захотел построить мотор, в котором все восемь цилиндров были бы заключены в одном блоке. Сказано – сделано, и Форд дал соответствующее указание. Все инженеры до одного сошлись в том, что просто невозможно объединить восемь цилиндров.\n" +

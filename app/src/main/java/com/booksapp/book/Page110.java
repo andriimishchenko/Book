@@ -2,6 +2,7 @@ package com.booksapp.book;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBar;
@@ -25,7 +26,16 @@ actionBar.setDisplayHomeAsUpEnabled(true);
         webView.showPage(PAGE_HTML);
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
     private String PAGE_HTML = "<h4>Юноша, увидевший судьбу</h4>\n" +
             "<div class=\"text\">\n" +
             "<p>Наконец мы, полагаю, готовы исследовать первый из принципов успеха. Старайтесь быть незашоренными и помните, что все эти принципы – изобретение отнюдь не одного человека. Они уже сработали у многих, и Вы можете применить их для своего блага.\n" +
