@@ -1,7 +1,10 @@
 package com.booksapp.book;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBar;
@@ -21,7 +24,24 @@ actionBar.setDisplayHomeAsUpEnabled(true);
         setContentView(webView);
         webView.showPage(PAGE_HTML);
     }
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            case R.id.item1:
+                Intent intent = new Intent(getBaseContext(), Page1510.class);
+                startActivity(intent);
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
     private String PAGE_HTML = "<h4>Страх болезней: семь симптомов<h4>\n" +
             "<div class=\"text\">" +

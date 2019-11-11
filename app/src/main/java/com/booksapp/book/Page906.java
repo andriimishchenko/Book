@@ -14,9 +14,9 @@ public class Page906 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTitle("Думай и богатей");
- ActionBar actionBar = getSupportActionBar();
-actionBar.setHomeButtonEnabled(true);
-actionBar.setDisplayHomeAsUpEnabled(true);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setHomeButtonEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
         webView = new PageWebView(this);
         setContentView(webView);
         webView.showPage(PAGE_HTML);

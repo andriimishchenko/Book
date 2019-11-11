@@ -1,7 +1,9 @@
 package com.booksapp.book;
 
-import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.ActionBar;
@@ -14,14 +16,31 @@ public class Page1513 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTitle("Думай и богатей");
- ActionBar actionBar = getSupportActionBar();
-actionBar.setHomeButtonEnabled(true);
-actionBar.setDisplayHomeAsUpEnabled(true);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setHomeButtonEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
         webView = new PageWebView(this);
         setContentView(webView);
         webView.showPage(PAGE_HTML);
     }
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            case R.id.item1:
+                Intent intent = new Intent(getBaseContext(), Page1514.class);
+                startActivity(intent);
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
     private String PAGE_HTML = "<h4>Боязнь старости, четыре симптома<h4>\n" +
             "<div class=\"text\">" +
